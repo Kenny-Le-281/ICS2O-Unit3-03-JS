@@ -11,18 +11,19 @@ if (navigator.serviceWorker) {
   })
 }
 
-'use strict'
+;("use strict")
 
 /**
  * This function calculates the volume of the sphere.
  */
-function calculate () {
+function calculate() {
   // input
-  const radius = parseFloat(document.getElementById('sphere-radius').value)
+  const radius = parseFloat(document.getElementById("sphere-radius").value)
 
   // process
-  const volume = 4 / 3 * Math.PI * Math.pow(radius, 3)
+  const volume = (4 / 3) * Math.PI * Math.pow(radius, 3)
 
   // output
-  document.getElementById('volume').innerHTML = 'The volume of the sphere is: ' + volume.toFixed(2) + ' cm³'
+  document.getElementById("volume").innerHTML =
+    "The volume of the sphere is: " + volume.toFixed(2) + " cm³"
 }
